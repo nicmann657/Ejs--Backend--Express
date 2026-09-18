@@ -1,0 +1,12 @@
+<h1>Hello Users</h1>
+<%let total = 0 %>
+
+<ul>
+    <%users.forEach((user)=>{%>
+      <li><%=user.name%></li>  
+       <%total += user.age%>
+    <%})%>
+</ul>
+
+<h2>Sum of age is <%=total%></h2>
+<h2>Total Users <%=users.length%></h2>
